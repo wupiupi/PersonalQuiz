@@ -31,20 +31,15 @@ final class ResultViewController: UIViewController {
 // MARK: - Private Methods
 extension ResultViewController {
     private func getMostFrequentAnswer(for answers: [Answer]) -> Animal? {
-        var animals: [Animal] = []
         var result: Animal?
         var oldValue = 0
         
-        for answer in answers {
-            if !animals.contains(answer.animal) {
-                animals.append(answer.animal)
-            }
-        }
+        let animals = answers.map { $0.animal }
         
         for animal in animals {
             var counter = 0
             
-            for answer in answers {
+            answers.forEach { answer in
                 if animal == answer.animal {
                     counter += 1
                 }
