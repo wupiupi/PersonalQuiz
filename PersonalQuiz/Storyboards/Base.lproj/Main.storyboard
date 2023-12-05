@@ -299,16 +299,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jRx-Xt-JCm">
-                                <rect key="frame" x="44" y="216" width="232.5" height="136"/>
+                                <rect key="frame" x="16" y="216" width="288" height="136"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeD-D1-YXt">
-                                        <rect key="frame" x="36" y="0.0" width="160.5" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CeD-D1-YXt">
+                                        <rect key="frame" x="64" y="0.0" width="160.5" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы осьминог" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nej-Cp-fKV">
-                                        <rect key="frame" x="0.0" y="76" width="232.5" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы осьминог" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Nej-Cp-fKV">
+                                        <rect key="frame" x="28" y="76" width="232.5" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -319,8 +319,9 @@
                         <viewLayoutGuide key="safeArea" id="gvF-7x-beJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jRx-Xt-JCm" firstAttribute="centerX" secondItem="ayH-XN-ibt" secondAttribute="centerX" id="D0K-FZ-03q"/>
-                            <constraint firstItem="jRx-Xt-JCm" firstAttribute="centerY" secondItem="ayH-XN-ibt" secondAttribute="centerY" id="u3T-XA-q3U"/>
+                            <constraint firstItem="jRx-Xt-JCm" firstAttribute="leading" secondItem="gvF-7x-beJ" secondAttribute="leading" constant="16" id="7Uf-yX-tQo"/>
+                            <constraint firstItem="jRx-Xt-JCm" firstAttribute="centerY" secondItem="ayH-XN-ibt" secondAttribute="centerY" id="7ja-61-wn4"/>
+                            <constraint firstItem="gvF-7x-beJ" firstAttribute="trailing" secondItem="jRx-Xt-JCm" secondAttribute="trailing" constant="16" id="hru-w4-Fnr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="yka-Fl-VSK">
